@@ -21,13 +21,11 @@ public class LoginTests extends BaseTest {
     public void testLogin_successful(){
         String endPoint = "https://reqres.in/api/login";
         Account account = new Account("eve.holt@reqres.in", "cityslicka");
-        ValidatableResponse response = RestAssured.given().header("Content-Type", "application/jsonTestListener")
+        RestAssured.given().header("Content-Type", "application/json")
                 .body(account).when()
-                .post(endPoint).then()
+                .post(endPoint).then().log().body()
                 .assertThat().statusCode(200)
                 .body("token", Matchers.equalTo("QpwL5tke4Pnpja7X4"));
-        response.log().body();
-
     }
 
     @Test(priority = 0, description="Login unsuccessful")
