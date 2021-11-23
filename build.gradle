@@ -19,7 +19,6 @@ dependencies {
 
     implementation group: 'ru.yandex.qatools.ashot', name: 'ashot', version: '1.5.4'
     implementation group: 'io.qameta.allure', name: 'allure-testng', version: '2.16.0'
-     // https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.0'
 
 }

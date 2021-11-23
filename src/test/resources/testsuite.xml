@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke Tests" >
+    <test name="LoginTest" parallel="false" thread-count="1">
+        <classes>
+            <class name="com.phuong.reqres.apitesting.LoginTests" />
+        </classes>
+    </test>
+    <test name="RegisterTest">
+        <classes>
+            <class name="com.phuong.reqres.apitesting.RegisterTests" />
+        </classes>
+    </test>
+</suite>
