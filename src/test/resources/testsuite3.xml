@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Tests3" >
-    <test name="ManageResourceTests" parallel="false" thread-count="1">
+    <test name="RegisterTest">
         <classes>
-            <class name="com.phuong.reqres.apitesting.ManageResourceTests" />
+            <class name="com.phuong.reqres.apitesting.RegisterTests" />
         </classes>
     </test>
 </suite>

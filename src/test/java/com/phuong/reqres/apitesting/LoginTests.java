@@ -19,7 +19,8 @@ public class LoginTests extends BaseTest {
     @Severity(SeverityLevel.MINOR)
     @Description("Test Description: Login successful")
     public void testLogin_successful(){
-        String endPoint = "https://reqres.in/api/login";
+        String a = System.getProperty("endpoint");
+        String endPoint = a;
         Account account = new Account("eve.holt@reqres.in", "cityslicka");
         RestAssured.given().header("Content-Type", "application/json")
                 .body(account).when()

@@ -6,9 +6,4 @@
             <class name="com.phuong.reqres.apitesting.LoginTests" />
         </classes>
     </test>
-    <test name="RegisterTest">
-        <classes>
-            <class name="com.phuong.reqres.apitesting.RegisterTests" />
-        </classes>
-    </test>
 </suite>
