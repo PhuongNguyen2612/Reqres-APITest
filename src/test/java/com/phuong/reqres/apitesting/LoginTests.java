@@ -20,6 +20,7 @@ public class LoginTests extends BaseTest {
     @Description("Test Description: Login successful")
     public void testLogin_successful(){
         String a = System.getProperty("endpoint");
+        System.out.println(a);
         String endPoint = a;
         Account account = new Account("eve.holt@reqres.in", "cityslicka");
         RestAssured.given().header("Content-Type", "application/json")
