@@ -27,6 +27,6 @@ ext.testFile = System.getProperty('Test_Plan') ?: 'testsuite.xml'
 
 test {
     useTestNG {
-        suites "src/main/resources/$testFile"
+        suites "src/test/resources/$testFile"
     }
 }
