@@ -23,6 +23,10 @@ dependencies {
 
 }
 
+ext.testFile = System.getProperty('Test_Plan') ?: 'testsuite.xml'
+
 test {
-    useJUnitPlatform()
+    useTestNG {
+        suites "src/main/resources/$testFile"
+    }
 }
