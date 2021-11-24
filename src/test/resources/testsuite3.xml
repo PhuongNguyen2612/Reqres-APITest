@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Tests2" >
+<suite name="Tests3" >
     <test name="ManageResourceTests" parallel="false" thread-count="1">
         <classes>
             <class name="com.phuong.reqres.apitesting.ManageResourceTests" />
