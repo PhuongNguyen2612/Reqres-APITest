@@ -23,7 +23,7 @@ dependencies {
 
 }
 
-ext.testFile = System.getProperty('Test_Plan') ?: 'testsuite.xml' ?: 'testsuite2.xml'
+ext.testFile = System.getProperty('Test_Plan')
 
 test {
     useTestNG {
